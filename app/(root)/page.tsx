@@ -1,7 +1,11 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <p>hello admin dashbord</p>
+   
+    <div className="p-4">
+   <Button size='default' variant='destructive'>click me</Button>
+    </div>
   );
 }
