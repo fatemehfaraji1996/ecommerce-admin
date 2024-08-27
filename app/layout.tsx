@@ -29,7 +29,7 @@
 // 8888888888888888888888888888888888888888888888888888
 import type { Metadata } from "next";
 import {
-  ClerkProvider, SignInButton, SignedIn,SignedOut,UserButton,} from "@clerk/nextjs";
+  ClerkProvider, SignInButton, SignedIn,SignedOut,UserButton} from "@clerk/nextjs";
 import "./globals.css";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
@@ -50,7 +50,7 @@ export default function RootLayout({
             <SignInButton />
           </SignedOut>
           <SignedIn>
-            <UserButton/>
+            {/* <UserButton/> */}
           </SignedIn>
           {children}
         </body>
